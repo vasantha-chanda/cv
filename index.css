@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:grey;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    list-style:none;
+}
+.container{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    min-height:1000px;
+    background:rgb(116, 134, 153);
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow:0 35px 30px rgba(0,0,0,0.1);
+    margin:50px;
+}
+.container .left{
+    position:relative;
+    background:rgb(8, 56, 56);
+    padding:40px;
+}
+.container .right{
+    position:relative;
+    background:white;
+    padding:40px;
+}
+.profile{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    padding-bottom: 20px;
+    border-bottom:2px solid rgb(13, 85, 85);
+}
+.imgContainer{
+    position:relative;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.profile .imgContainer img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit:cover;
+}
+.profile h2{
+    color:#fff;
+    font-size:1.5rem;
+    margin-top:20px;
+    text-transform:uppercase;
+    font-weight:300;
+    line-height:1.5em;
+   
+}
+.profile h2 span{
+    font-size:0.8em;
+    font-weight:200;
+    color:#fff;
+    
+    
+
+}
+.contact{
+    padding-top:40px;
+    font-size:0.9em;
+    line-height:2em;
+    padding-bottom: 15px;
+    border-bottom:2px solid rgb(13, 85, 85);
+}
+.title{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight:300;
+    letter-spacing: 1px;
+    margin-bottom:15px;
+}
+.contact ul{
+    position:relative;
+}
+.contact ul li{
+
+    list-style: none;
+    
+    margin:10px 2px;
+}
+.contact ul li .icon{
+    display:inline-block;
+    width:30px;
+    font-size:18px;
+    color:rgb(13, 85, 85);
+    
+}
+.contact ul li .text{
+    color:#fff;
+    font-weight:200;
+}
+.education{
+    padding-top:40px;
+    padding-bottom: 15px;
+}
+.education ul li {
+    list-style:none;
+    line-height:1.5em;
+    padding:4px;
+    
+}
+.education ul li h4{
+    color:#fff;
+    font-weight:200;
+}
+.education ul li h5{
+    color:#fff;
+    font-weight:200;
+}
+.education ul li h4 span{
+    font-weight:400;
+}
+.languages{
+    position:relative;
+    border-top:2px solid rgb(13, 85, 85);
+    padding-top:40px;
+    
+}
+.languages ul li{
+    list-style:none;
+    line-height:1.5em;
+    padding:4px;
+}
+.languages ul li .text{
+    color:#fff;
+    font-weight:200;
+}
+
+
+.about{
+    margin-bottom:50px;
+    padding-bottom:15px;
+    border-bottom:2px solid rgb(8, 56, 56);
+}
+.about:last-child{
+    margin-bottom:0;
+}
+.title2{
+    color:rgb(8, 56, 56);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom:10px;
+}
+.skills{
+    line-height:3em;
+    padding-bottom:15px;
+    margin-bottom: 15px;;
+}
+.skills .box{
+    position:relative;
+    width:100%;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    justify-content:center;
+
+
+}
+.skills  h4{
+    text-transform: uppercase;
+    font-weight:300;
+}
+
+.skills  .div1{
+    height:10px;
+    width:80%;
+    background:rgb(8, 56, 56);
+}
+.skills  .div2{
+    height:10px;
+    width:60%;
+    background:rgb(8, 56, 56);
+}
+.skills  .div3{
+    height:10px;
+    width:50%;
+    background:rgb(8, 56, 56);
+}
+.interest ul{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    padding:10px;
+    margin:10px 10px;
+}
+.interest ul li .fas{
+    color:rgb(8, 56, 56);
+    font-size:16px;
+    margin-right:10px;
+    
+}
+@media(max-width:1000px)
+{
+    .container{
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
